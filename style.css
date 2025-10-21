@@ -44,5 +44,13 @@ header {
     justify-content: center;
     background-image: url('layout-01-assets/img11.jpg');
     background-repeat: no-repeat;
-    b
+    height: 30vh;
+}
+
+header > h1, header > p {
+    color: white;
+}
+
+.Space1 {
+    display: flex;
 }
