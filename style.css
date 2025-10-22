@@ -15,15 +15,13 @@ nav {
 nav > ul {
     display: flex;
     gap: 1rem;
-    justify-content: center;
-    text-decoration: none;
     color: white;
     list-style-type: none;
     margin: 0;
     padding: 1rem;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     padding: 0.6rem 1rem;
     text-decoration: none;
@@ -53,4 +51,75 @@ header > h1, header > p {
 
 .Space1 {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10%;
+    gap: 5%;
+}
+
+.First, .Second, .Third {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: min-content;
+    background-color: rgb(237, 237, 237);
+
+}
+
+.First > p, .Second > p, .Third > p, .First > h3, .Second > h3, .Third > h3 {
+    margin: 10px;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 3px;
+    text-decoration: none;
+    width: max-content;
+    padding: 5px 10px;
+    align-self: center;
+    color: black;
+    margin: 20px;
+}
+
+.green {
+    background-color: green;
+    color:  white;
+
+}
+
+.blue {
+    background-color: blue;
+    color:  white;
+
+}
+
+.red {
+    background-color: darkred;
+    color:  white;
+
+}
+
+.First {
+    order: 1;
+}
+
+.Second {
+    order: 2;
+}
+
+.Third {
+    order: 3;
+}
+
+.Two-Column {
+    order: 4;
+}
+
+.Two-Columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
 }
