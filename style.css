@@ -50,24 +50,23 @@ header > h1, header > p {
 }
 
 .Space1 {
+    max-width: 980px;
+    margin: 2em auto;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 10%;
-    gap: 5%;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.First, .Second, .Third {
+.Card {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: min-content;
+    flex-flow: column wrap;
     background-color: rgb(237, 237, 237);
-
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-.First > p, .Second > p, .Third > p, .First > h3, .Second > h3, .Third > h3 {
-    margin: 10px;
+.Card > p, .Card > h3{
+    margin: 0.5rem 1rem;
 }
 
 .Button {
@@ -77,10 +76,17 @@ header > h1, header > p {
     border-radius: 3px;
     text-decoration: none;
     width: max-content;
-    padding: 5px 10px;
     align-self: center;
     color: black;
-    margin: 20px;
+    padding: 5px;
+}
+
+.one-third {
+    flex-basis: 32%;
+}  
+
+.one-quarter {
+    flex-basis: 24%;
 }
 
 .green {
@@ -113,13 +119,14 @@ header > h1, header > p {
     order: 3;
 }
 
-.Two-Column {
+.left {
     order: 4;
 }
 
-.Two-Columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5%;
+.right {
+    order: 5;
+}
+
+.Banner {
+    width: 100%;
 }
