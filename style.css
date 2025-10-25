@@ -53,8 +53,9 @@ header > h1, header > p {
     max-width: 980px;
     margin: 2em auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .Card {
@@ -63,6 +64,15 @@ header > h1, header > p {
     background-color: rgb(237, 237, 237);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
+
+.half-container {
+    max-width: 980px;
+    margin: 2em auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .Card > p, .Card > h3{
@@ -85,8 +95,12 @@ header > h1, header > p {
     flex-basis: 32%;
 }  
 
+.one-half {
+    flex-basis: 40%;
+}
+
 .one-quarter {
-    flex-basis: 24%;
+    flex-basis: 14%;
 }
 
 .green {
@@ -129,4 +143,108 @@ header > h1, header > p {
 
 .Banner {
     width: 100%;
+    background-image: url(layout-01-assets/img13.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Banner p {
+    width: 66vh;
+    text-align: center;
+}
+
+.quarter-container {
+    max-width: 980px;
+    margin: 2em auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.single-Column {
+    max-width: 980px;
+    margin: 2em auto;
+    display: flex;
+    flex-flow: row;
+}
+
+.Big-Column > .Button {
+    margin-left: 1em;
+    align-self: flex-start;
+}
+
+.forum-container {
+    display: flex;
+    background-image: url(layout-01-assets/img14.jpg);
+    justify-content: center;
+}  
+
+.forum {
+    width: 780px;
+    margin-bottom: 1em;
+}
+
+.forum > h2 {
+    color: white;
+    text-align: center;
+}
+
+.forum > p {
+    text-align: center;
+    background-color: white;
+    opacity: 50%;
+}
+
+.name {
+    grid-area: n;
+}
+
+.email {
+    grid-area: e;
+}
+
+.subject {
+    grid-area: s;
+}
+
+.message {
+    grid-area: m;
+}
+
+.b {
+    margin-top: 3%;
+    margin-left: 50%;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-areas: 
+    "n m"
+    "e m"
+    "s m";
+    opacity: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+}
+
+.corner {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-self: flex-end;
+    padding: 10px;
 }
